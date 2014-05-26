@@ -1,9 +1,37 @@
-<h5 class="tile__title">
-  {{churchname}}
-</h5>
-<div>
-  {{MassOnTime_format_eventtypeid eventtypeid}} at {{starttime12}}.
-</div>
-<div class="mass--address">
-  {{MassOnTime_format_parish_address address city province}}
+<div class="tile tile--f tile--loc">
+    <div class="tile--f__main tile--loc__main">
+        <div class="tile__media">
+            <img class="tile__media__img js-lazyload" alt="" data-src="//images.duckduckgo.com/iu/?u=http%3A%2F%2Fmassontime.com%2Fimages%2Fhlchapel.png&f=1" src="//images.duckduckgo.com/iu/?u=http%3A%2F%2Fmassontime.com%2Fimages%2Fhlchapel.png&f=1"></img>
+        </div>
+        <div class="tile__num">
+            {{index}}
+        </div>
+        <div class="tile__body">
+            <h6 class="tile__title">
+              {{churchname}}
+            </h6>
+            <span class="mass--address">
+              {{MassOnTime_format_eventtypeid eventtypeid}} at {{starttime12}}.
+            </span>
+        </div>
+    </div>
+    <div class="tile--f__alt tile--loc__alt">
+        <div class="tile__body has-foot">
+            <h6 class="tile__title">
+                {{churchname}}
+            </h6>
+            <div class="mass--address">
+              {{MassOnTime_format_eventtypeid eventtypeid}} at {{starttime12}}.
+            </div>
+            <div class="mass--address">
+              {{MassOnTime_format_parish_address address city province}}
+            </div>
+            <div class="tile__foot">
+                <a class="zci__more-at__icon" href="{{url}}">
+                    <img class="zci__more-at__icon" width="16" height="16" src="//icons.duckduckgo.com/ip/massontime.com.ico"></img>
+                    More at Mass On Time
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
